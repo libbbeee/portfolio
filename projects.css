@@ -175,6 +175,137 @@
   margin-bottom: 1.5rem;
 }
 
+.gameplay-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gameplay-step {
+  position: relative;
+  flex: 1 1 190px;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, #f0fcfb 0%, #ffffff 100%);
+  border: 1px solid #dcefe9;
+  border-radius: 10px;
+}
+
+.gameplay-step:not(:last-child)::after {
+  content: "\2192";
+  position: absolute;
+  top: 1.35rem;
+  right: -0.85rem;
+  z-index: 1;
+  width: 1.6rem;
+  color: #207573;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.gameplay-step-icon {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: #207573;
+  font-size: 1.5rem;
+}
+
+.gameplay-step-number {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #7d6ee5;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.gameplay-step h4 {
+  margin-bottom: 0.5rem;
+  color: #1f6a67;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.gameplay-step p {
+  margin: 0;
+  color: #4f5e5c;
+  font-size: 0.95rem;
+}
+
+.gameplay-repeat {
+  margin: 0 !important;
+  padding: 0.9rem 1rem;
+  color: #175455 !important;
+  background-color: #e3f7f3;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gameplay-repeat i {
+  margin-right: 0.45rem;
+  color: #7d6ee5;
+}
+
+.key-systems {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dcefe9;
+}
+
+.key-systems h4 {
+  margin-bottom: 1rem;
+  color: #1f6a67;
+  font-size: 1.3rem;
+}
+
+.key-systems-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.key-systems-list li {
+  display: flex;
+  flex: 1 1 240px;
+  gap: 0.8rem;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: #f0fcfb;
+  border: 1px solid #dcefe9;
+  border-radius: 8px;
+  color: #4f5e5c;
+  font-size: 0.95rem;
+}
+
+.key-systems-list li > i {
+  display: flex;
+  flex: 0 0 2.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  color: #207573;
+  background-color: #e3f7f3;
+  border-radius: 50%;
+}
+
+.key-systems-list li strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #1f6a67;
+}
+
 .back-to-projects {
   color: #207573;
   font-weight: bold;
@@ -208,6 +339,21 @@
 @media (max-width: 768px) {
   .project-grid {
     flex-direction: column;
+  }
+
+  .gameplay-steps {
+    flex-direction: column;
+  }
+
+  .gameplay-step {
+    flex-basis: auto;
+  }
+
+  .gameplay-step:not(:last-child)::after {
+    top: auto;
+    right: 50%;
+    bottom: -1.3rem;
+    transform: rotate(90deg);
   }
 
   .projects-hero h2 {
