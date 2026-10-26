@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dungeon Delver - Level Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"><i class="fa-solid fa-gamepad"></i> Libby Potter</h1>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fa-solid fa-home"></i>Home</a></li>
+        <li><a href="index.html#bio"><i class="fa-solid fa-user"></i>About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Project Introduction -->
+  <section class="project-detail-hero">
+    <div class="container">
+      <h2>Dunegon Delver</h2>
+      <p>Designing a dungeon that rewards exploration, teaches mechanics, and makes overcoming challenges feel satisfying.</p>
+      <a href="index.html#projects" class="btn"><i class="fa-solid fa-arrow-left"></i>Back to Projects</a>
+    </div>
+  </section>
+
+  <!-- Project Details -->
+  <main class="project-detail-section">
+    <div class="container">
+      <div class="project-detail-card">
+        <h3>Project Overview</h3>
+        <p><strong>Project:</strong> Dungeon Delver, level design</p>
+        <p><strong>My Roles:</strong> Level Design, Puzzle Design, Player Progression, Play Testing</p>
+        <p><strong>Tools:</strong> Delver Level Editor Engine by Jeremy Bond, Amanda Hackbardt, and Jimmy Philips</p>
+        <p><strong>Timeline:</strong> 4 weeks</p>
+        <p>Dungeon Delver is a dungeon level design project focused on creating an engaging experience through interconnected rooms, environmental puzzles, and combat encounters. Inspired by the feel of classic The Legend of Zelda combat, the level combines exploration and problem-solving with a gradual increase in difficulty.
+        My primary goal was to create a dungeon with a clear structure that encouraged players to explore, learn new mechanics, and feel rewarded for overcoming challenges. I designed the level around a central hub, with branching sections that introduced different challenges and eventually came together in a final test of the player's skills.
+        </p>
+      </div>
+      <ul class="project-tags" aria-label="Project topics">
+        <li>Level Design</li>
+        <li>Iterative Design</li>
+        <li>Playtesting</li>
+      </ul>
+
+      <h2>Design Process</h2>
+      <div class="project-detail-card">
+        <h3>Design Goals</h3>
+          <h4>Clear Navigation</h4>
+          <p>Create an interconnected dungeon that players can navigate without feeling lost.</p>
+          <h4>Balanced Gameplay</h4>
+          <p>Alternate between combat and puzzles to acheive a satisfying pace.</p>
+          <h4>Progressive Difficulty</h4>
+          <p>Introduce mechanics in manageable steps before asking players to use them in more challenging situations.</p>
+          <h4>Rewarding Exploration</h4>
+          <p>Encourage players to explore alternate paths and discover optional challenges.</p>
+      </div>
+      <div class="project-detail-card">
+        <h3>Initial Design</h3>
+          <h4>Central Hub</h4>
+          <p>The hub serves as the foundation of the dungeon's layout. Built from four connected rooms, it gives players a recognizable space to return to throughout the level. Teleporters connect the hub to the dungeon's different branches, creating a consistent point of reference while encouraging exploration.
+          This structure also lets players experience the dungeon as a series of smaller sections rather than one overwhelming space.</p>
+          <h4>Optional Paths</h4>
+          <p>There are some challenges in the level that are unavoidable, but there are also options for the player to choose different paths based on their playstyle. In section B, the player has the choice between a challenging puzzle or a moderate puzzle with combat. The grey diamonds also represent potential opportunties for playre tpo explore and gain more resources/experience.</p>
+          <h4>Building Toward Challenges</h4>
+          <p>The aim of this dungeons was to gradually introduce the player to new enemies and mechanics, give them time to practice and get used to them, and at the end test their mastery with a final challenge.</p>
+      </div>
+
+      <div class="project-detail-card alpha-section">
+        <div class="alpha-heading">
+          <h3>Alpha</h3>
+        </div>
+        <p class="alpha-summary">Feedback on my initial design showed that the level felt weighted toward section B and that the grappler was underused. I added more rooms to section A, giving players extra exploration options and more chances to practice with the grappler.</p>
+        <h4>Ideal Path</h4>
+        <div class="alpha-playtest">
+          <h4 class="alpha-playtest-title"><i class="fa-solid fa-comments" aria-hidden="true"></i> Playtest 1</h4>
+          <div class="alpha-feedback">
+            <div class="alpha-feedback-card alpha-positive">
+              <h5><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> What players liked</h5>
+              <p>Players enjoyed teleporting back to the hub, which made revisiting areas with newly acquired tools more interesting. They also liked the clear structure, pacing, and variety of rooms.</p>
+            </div>
+            <div class="alpha-feedback-card alpha-critique">
+              <h5><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What could improve</h5>
+              <p>Players found ways to softlock themselves in some areas, including the Sokoban puzzles and doors. They also wanted clearer visual cues for points of interest and the ideal path.</p>
+            </div>
+          </div>
+          <div class="alpha-response">
+            <h5><i class="fa-solid fa-wrench" aria-hidden="true"></i> Design response</h5>
+            <ul>
+              <li>Test and fix every door so players can follow the intended path without getting stuck.</li>
+              <li>Give every Sokoban puzzle a walkable border, so players can push tiles from any direction.</li>
+              <li>Make the main path and required doors easier to recognize.</li>
+              <li>Add a route back to the hub for players who are teleported into the void.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail-card">
+        <h3>Additional Challenge</h3>
+        <p>A new requirement was suddenly added to the project: the production team wanted an additional 3 rooms at the end of the level with extremely hard challenges and a reward at the end.</p>
+        <p>To meet these requirements, I added:</p>
+        <li>An entry room to introduce the new section and show the players the end goal they are trying to reach.</li>
+        <li>1 difficult sokuban ice puzzle that required the player to get 2 pucks into the correct position instead of just 1.</li>
+        <li>1 difficult combat room with a combination of all the enemies the player has encountered so far.</li>
+        <li>A reward room where the player reaches the end of the level, gets an additional heart, and gets to celebrate with friends.</li>
+      </div>
+
+      <div class="project-detail-card">
+        <div class="alpha-heading">
+          <h3>Beta</h3>
+        </div>
+          <div class="alpha-playtest">
+          <h4 class="alpha-playtest-title"><i class="fa-solid fa-comments" aria-hidden="true"></i> Playtest 2</h4>
+          <div class="alpha-feedback">
+            <div class="alpha-feedback-card alpha-positive">
+              <h5><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> What players liked</h5>
+              <p>The additional rooms at the end were challenging, but it made completing the level feel rewarding. There was nowhere they could softlock themselves and the level felt fluid to progress through.</p>
+            </div>
+            <div class="alpha-feedback-card alpha-critique">
+              <h5><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What could improve</h5>
+              <p>The additional rooms at the end were very challenging to the point of being frustrating for some less experienced players. Players who didn't know a lot about the engine had a hard time figuring out how to solve the final puzzle and felt overwhelmed in the last combat room.</p>
+            </div>
+          </div>
+          <div class="alpha-response">
+            <h5><i class="fa-solid fa-wrench" aria-hidden="true"></i> Design response plan</h5>
+            <ul>
+              <li>Add more rooms introducing players to the physics engine/multiple pucks in Sokoban puzzles so they feel more equipped to deal with the final puzzle.</li>
+              <li>Space out the enemies more in the final combat room and give the player more space to move so they feel less overwhelmed.</li>
+            </ul>
+          </div>
+      </div>
+      <a href="index.html#projects" class="back-to-projects"><i class="fa-solid fa-arrow-left"></i> View all projects</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Libby Potter - Game Design Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>
