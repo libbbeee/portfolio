@@ -25,7 +25,7 @@
   <section class="project-detail-hero">
     <div class="container">
       <h2>Alien Invaders</h2>
-      <p>Designing three levels that feel interconnected and reward playre exploration.</p>
+      <p>Designing three levels that feel interconnected and reward player exploration.</p>
       <a href="index.html#projects" class="btn"><i class="fa-solid fa-arrow-left"></i>Back to Projects</a>
     </div>
   </section>
@@ -39,8 +39,11 @@
         <p><strong>My Roles:</strong> Level Design, Player Progression, Play Testing</p>
         <p><strong>Tools:</strong> Platformer Engine by Cowsins</p>
         <p><strong>Timeline:</strong> 4 weeks</p>
-        <p>Dungeon Delver is a dungeon level design project focused on creating an engaging experience through interconnected rooms, environmental puzzles, and combat encounters. Inspired by the feel of classic The Legend of Zelda combat, the level combines exploration and problem-solving with a gradual increase in difficulty.
-        My primary goal was to create a dungeon with a clear structure that encouraged players to explore, learn new mechanics, and feel rewarded for overcoming challenges. I designed the level around a central hub, with branching sections that introduced different challenges and eventually came together in a final test of the player's skills.
+        <p>For this project, I designed a three-section, 2D platforming experience inspired by Hollow Knight and Celeste. My goal was to create an interconnected world that encouraged exploration, rewarded curiosity, and gradually challenged players as they learned new mechanics.
+
+        The experience follows a player trapped in a crater created by an alien invasion. To escape, the player must descend into an alien facility, obtain a grappling hook, and use their new abilities to navigate previously inaccessible areas and reach the surface.
+
+        Rather than treating each section as a separate level, I designed the environment around a continuous progression loop. Players descend into the facility, gain a new ability, and retrace their steps to discover new paths before facing a final platforming challenge.
         </p>
       </div>
       <ul class="project-tags" aria-label="Project topics">
@@ -52,67 +55,51 @@
       <h2>Design Process</h2>
       <div class="project-detail-card">
         <h3>Design Goals</h3>
-          <h4>Clear Navigation</h4>
-          <p>Create an interconnected dungeon that players can navigate without feeling lost.</p>
-          <h4>Balanced Gameplay</h4>
-          <p>Alternate between combat and puzzles to acheive a satisfying pace.</p>
+          <h4>Interconnected Level Design</h4>
+          <p>I wanted players to feel that they were exploring one cohesive world rather than a series of disconnected stages, as well as encourage exploration.</p>
           <h4>Progressive Difficulty</h4>
-          <p>Introduce mechanics in manageable steps before asking players to use them in more challenging situations.</p>
-          <h4>Rewarding Exploration</h4>
-          <p>Encourage players to explore alternate paths and discover optional challenges.</p>
+          <p>Introduce mechanics gradually before combining them into more difficult sequences. </p>
+          <h4>Player Choice</h4>
+          <p>Incorporate multiple routes, optional rewards, and weapon choices to give players some control over how they explored and approached challenges.</p>
       </div>
       <div class="project-detail-card">
         <h3>Initial Design</h3>
-          <h4>Central Hub</h4>
-          <p>The hub serves as the foundation of the dungeon's layout. Built from four connected rooms, it gives players a recognizable space to return to throughout the level. Teleporters connect the hub to the dungeon's different branches, creating a consistent point of reference while encouraging exploration.
-          This structure also lets players experience the dungeon as a series of smaller sections rather than one overwhelming space.</p>
-          <h4>Optional Paths</h4>
-          <p>There are some challenges in the level that are unavoidable, but there are also options for the player to choose different paths based on their playstyle. In section B, the player has the choice between a challenging puzzle or a moderate puzzle with combat. The grey diamonds also represent potential opportunties for playre tpo explore and gain more resources/experience.</p>
-          <h4>Building Toward Challenges</h4>
-          <p>The aim of this dungeons was to gradually introduce the player to new enemies and mechanics, give them time to practice and get used to them, and at the end test their mastery with a final challenge.</p>
+          <h4>Section 1 - The Underground</h4>
+          <p>The opening section introduces the player to the environment and basic platforming mechanics. I designed branching cave pathways, optional exploration routes, and areas that players could see but could not yet access.</p>
+          <h4>Section 2 - The Alien Facility</h4>
+          <p>The second section shifts to a more artificial environment, using angular layouts, winding routes, enemies, and moving platforms to create a distinct identity. This is where players obtain the grappling hook, unlocking a new way to navigate the world.</p>
+          <h4>Section 3 - The Surface</h4>
+          <p>The final section focuses on mastering the grappling hook. I combined grappling challenges with bounce pads to create a more demanding platforming sequence that tests the skills players developed earlier.</p>
       </div>
 
       <div class="project-detail-card alpha-section">
         <div class="alpha-heading">
           <h3>Alpha</h3>
         </div>
-        <p class="alpha-summary">Feedback on my initial design showed that the level felt weighted toward section B and that the grappler was underused. I added more rooms to section A, giving players extra exploration options and more chances to practice with the grappler.</p>
         <h4>Ideal Path</h4>
         <div class="alpha-playtest">
           <h4 class="alpha-playtest-title"><i class="fa-solid fa-comments" aria-hidden="true"></i> Playtest 1</h4>
           <div class="alpha-feedback">
             <div class="alpha-feedback-card alpha-positive">
               <h5><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> What players liked</h5>
-              <p>Players enjoyed teleporting back to the hub, which made revisiting areas with newly acquired tools more interesting. They also liked the clear structure, pacing, and variety of rooms.</p>
+              <p>Players liked the idea of getting the grappler in level 2 and re-expliring level 1 with the new tool. They also liked the distinct theme of each level to distinguish them from eachother.</p>
             </div>
             <div class="alpha-feedback-card alpha-critique">
               <h5><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What could improve</h5>
-              <p>Players found ways to softlock themselves in some areas, including the Sokoban puzzles and doors. They also wanted clearer visual cues for points of interest and the ideal path.</p>
+              <p>Players felt that it was too open and easy to get lost, so they didn't venture out and explore much. While they liked the idea of different themese for different sections, they felt it could be displayed more aesthically.</p>
             </div>
           </div>
           <div class="alpha-response">
             <h5><i class="fa-solid fa-wrench" aria-hidden="true"></i> Design response</h5>
             <ul>
-              <li>Test and fix every door so players can follow the intended path without getting stuck.</li>
-              <li>Give every Sokoban puzzle a walkable border, so players can push tiles from any direction.</li>
-              <li>Make the main path and required doors easier to recognize.</li>
-              <li>Add a route back to the hub for players who are teleported into the void.</li>
+              <li>Added more platforming to the center of section 1 and reworked the moving platforms in section 2 to bring the player to different spaces and fix the feeling of emptiness. </li>
+              <li>Created rule tiles and made each section fit their theme visually.</li>
+              <li>Added more pickups on alternate paths to encourage more payer exploration.</li>
+              <li>Extnded section 3 to include more of a challenge and make reahcing the end feel more rewarding.</li>
             </ul>
           </div>
         </div>
-      </div>
 
-      <div class="project-detail-card">
-        <h3>Additional Challenge</h3>
-        <p>A new requirement was suddenly added to the project: the production team wanted an additional 3 rooms at the end of the level with extremely hard challenges and a reward at the end.</p>
-        <p>To meet these requirements, I added:</p>
-        <li>An entry room to introduce the new section and show the players the end goal they are trying to reach.</li>
-        <li>1 difficult sokuban ice puzzle that required the player to get 2 pucks into the correct position instead of just 1.</li>
-        <li>1 difficult combat room with a combination of all the enemies the player has encountered so far.</li>
-        <li>A reward room where the player reaches the end of the level, gets an additional heart, and gets to celebrate with friends.</li>
-      </div>
-
-      <div class="project-detail-card">
         <div class="alpha-heading">
           <h3>Beta</h3>
         </div>
