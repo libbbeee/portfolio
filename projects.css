@@ -142,6 +142,10 @@
   background-color: #f7fdfc;
 }
 
+.project-detail-container {
+  max-width: 1120px;
+}
+
 .project-detail-section h2 {
   font-size: 2rem;
   color: #1f6a67;
@@ -169,6 +173,173 @@
 
 .project-detail-card p:last-child {
   margin-bottom: 0;
+}
+
+.design-goals-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.design-goals-copy {
+  flex: 1 1 0;
+}
+
+.project-figure-flowchart {
+  flex: 0 1 360px;
+  margin: 0 auto;
+}
+
+.project-figure {
+  margin: 1.25rem auto;
+  text-align: center;
+}
+
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #dcefe9;
+  border-radius: 8px;
+  background-color: #f7fdfc;
+  box-shadow: 0 3px 12px rgba(31, 106, 103, 0.12);
+}
+
+.project-figure figcaption {
+  margin-top: 0.6rem;
+  color: #4f5e5c;
+  font-size: 0.9rem;
+}
+
+.project-figure-flowchart img,
+.project-figure-level img {
+  max-width: 500px;
+}
+
+.project-figure-flowchart img {
+  max-width: 220px;
+}
+
+.project-figure-dd-flowchart {
+  flex: 0 1 360px;
+  margin: 0 auto;
+}
+
+.project-figure-dd-flowchart img {
+  max-width: 360px;
+}
+
+.project-figure-dd-sketch img,
+.project-figure-dd-pathing img {
+  max-width: 760px;
+}
+
+.project-figure-dd-layout img,
+.project-figure-dd-challenge img {
+  max-width: 900px;
+}
+
+.initial-design-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.initial-design-level {
+  display: flex;
+  flex: 1 1 280px;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #f7fdfc;
+  border: 1px solid #dcefe9;
+  border-radius: 8px;
+}
+
+.initial-design-copy {
+  flex: 1;
+}
+
+.initial-design-copy h4 {
+  margin-bottom: 0.5rem;
+  color: #1f6a67;
+}
+
+.initial-design-copy p {
+  margin-bottom: 0;
+}
+
+.initial-design-level .project-figure-level {
+  margin: 0 0 1rem;
+  order: -1;
+}
+
+.initial-design-level .project-figure-level img {
+  max-width: 160px;
+}
+
+.alpha-level .project-figure-level {
+  margin: 1rem 0 0;
+  order: 0;
+}
+
+.alpha-level .project-figure-level img {
+  max-width: 280px;
+}
+
+.project-figure-ideal-path img {
+  max-width: 280px;
+}
+
+.ideal-path-layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ideal-path-images {
+  display: flex;
+  flex: 1 1 0;
+  gap: 1rem;
+}
+
+.ideal-path-images .project-figure-ideal-path {
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+}
+
+.ideal-path-legend {
+  flex: 0 1 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ideal-path-legend li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid;
+}
+
+.ideal-path-legend li:last-child {
+  margin-bottom: 0;
+}
+
+.ideal-path-legend .ideal-path-section1 {
+  border-left-color: #7655c8;
+}
+
+.ideal-path-legend .ideal-path-grappler {
+  border-left-color: #e3b928;
+}
+
+.ideal-path-legend .ideal-path-section2 {
+  border-left-color: #e87835;
+}
+
+.ideal-path-legend .ideal-path-section3 {
+  border-left-color: #45a66a;
 }
 
 .alpha-heading {
@@ -445,6 +616,32 @@
     flex-direction: column;
   }
 
+  .design-goals-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ideal-path-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ideal-path-images {
+    flex-direction: column;
+  }
+
+  .ideal-path-legend {
+    flex-basis: auto;
+  }
+
+  .project-figure-flowchart {
+    width: 100%;
+  }
+
+  .project-figure-dd-flowchart {
+    width: 100%;
+  }
+
   .gameplay-steps {
     flex-direction: column;
   }
@@ -466,5 +663,11 @@
 
   .project-detail-hero h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .initial-design-levels {
+    flex-direction: column;
   }
 }
