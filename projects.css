@@ -946,8 +946,9 @@
   border-radius: 8px;
 }
 
-.shepherd-figure img {
-  max-width: 650px;
+.shepherd-game-loop img,
+.shepherd-level-sheet img {
+  max-width: 560px;
 }
 
 .shepherd-playtest-figure img {
@@ -955,7 +956,7 @@
 }
 
 .shepherd-page .project-detail-section .container {
-  max-width: 1120px;
+  max-width: 1200px;
 }
 
 .shepherd-page .alpha-section {
@@ -976,6 +977,16 @@
   padding: 1rem;
 }
 
+.shepherd-challenge-list {
+  margin: -0.5rem 0 1rem;
+  padding-left: 1.25rem;
+  color: #4f5e5c;
+}
+
+.shepherd-challenge-list li {
+  padding: 0.2rem 0;
+}
+
 @media (max-width: 700px) {
   .shepherd-overview {
     align-items: stretch;
@@ -992,5 +1003,49 @@
 @media (max-width: 560px) {
   .shepherd-page .alpha-section {
     flex-direction: column;
+  }
+}
+
+.charity-water-layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.charity-water-page .project-detail-section .container {
+  max-width: 1200px;
+}
+
+.charity-water-copy {
+  flex: 1 1 0;
+}
+
+.charity-water-layout .project-figure {
+  flex: 0 1 42%;
+  margin: 0;
+}
+
+.charity-game-figure img {
+  max-width: 760px;
+}
+
+.charity-sketch-figure img {
+  max-width: 440px;
+}
+
+.charity-wireframe-figure img {
+  max-width: 360px;
+}
+
+@media (max-width: 768px) {
+  .charity-water-layout {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .charity-water-layout .project-figure {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
   }
 }

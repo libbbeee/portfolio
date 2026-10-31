@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="projects.css">
 </head>
-<body>
+<body class="charity-water-page">
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="container">
@@ -26,6 +26,7 @@
     <div class="container">
       <h2>A Ripple of Change</h2>
       <p>An engaging game inspired by charity:water's mission, designed to raise awareness among young audiences about clean water access and environmental restoration.</p>
+      <a href="https://libbbeee.github.io/06-completed-charity-water-game/" class="btn" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Play the game</a>
       <a href="index.html#projects" class="btn"><i class="fa-solid fa-arrow-left"></i>Back to Projects</a>
     </div>
   </section>
@@ -35,13 +36,21 @@
     <div class="container">
       <div class="project-detail-card">
         <h3>Project Overview</h3>
-        <p><strong>Project:</strong> A Ripple of Change, a web-clicker prototype</p>
-        <p><strong>My Roles:</strong> Iterative design and development of: gameplay mechanics, resource systems, progression, and UI/UX</p>
-        <p><strong>Tools:</strong> CSS, HTML, JavaScript, Figma</p>
-        <p><strong>Timeline:</strong> 3 weeks</p>
-        <p>Ripple of Change is a simple, engaging mobile game inspired by charity:water's mission of bringing clean water to communities around the world. Players begin with a polluted lake filled with trash and murky water. By tapping the charity:water jerry can, they generate "Vitality Points" that can be used to clean the environment, restore wildlife, and build community resources such as gardens and wells.
-        The core appeal of the game is watching the environment transform over time. As players invest their points, the water becomes clearer, trash disappears, fish return, and the surrounding community thrives. This visual progression creates a rewarding gameplay loop while reinforcing the message that small actions can create meaningful change.
-        </p>
+        <div class="charity-water-layout">
+          <div class="charity-water-copy">
+            <p><strong>Project:</strong> A Ripple of Change, a web-clicker prototype</p>
+            <p><strong>My Roles:</strong> Iterative design and development of: gameplay mechanics, resource systems, progression, and UI/UX</p>
+            <p><strong>Tools:</strong> CSS, HTML, JavaScript, Figma</p>
+            <p><strong>Timeline:</strong> 3 weeks</p>
+            <p>Ripple of Change is a simple, engaging mobile game inspired by charity:water's mission of bringing clean water to communities around the world. Players begin with a polluted lake filled with trash and murky water. By tapping the charity:water jerry can, they generate "Vitality Points" that can be used to clean the environment, restore wildlife, and build community resources such as gardens and wells.
+            The core appeal of the game is watching the environment transform over time. As players invest their points, the water becomes clearer, trash disappears, fish return, and the surrounding community thrives. This visual progression creates a rewarding gameplay loop while reinforcing the message that small actions can create meaningful change.
+            </p>
+          </div>
+          <figure class="project-figure charity-game-figure">
+            <img src="img/CharityWater/charitywatergame.JPG" alt="A screenshot of the Ripple of Change game">
+            <figcaption>A look at the Ripple of Change game prototype.</figcaption>
+          </figure>
+        </div>
       </div>
       <ul class="project-tags" aria-label="Project topics">
         <li>Game Development</li>
@@ -52,13 +61,21 @@
       <h2>Design Process</h2>
       <div class="project-detail-card">
         <h3>Design Goals</h3>
-        <p>Create an experience that makes charity:water's mission easily approachable and encourages engagement.</p>
-          <h4>Make every action count</h4>
-          <p>Give players a simple, repeatable interaction that generates resources in a menaingful way</p>
-          <h4>Make progress visible</h4>
-          <p>Use visual changes to communicate success. Every restoration milestone should make the world look and feel more alive.</p>
-          <h4>Encourage long term investment</h4>
-          <p>Give players reasons to keep developing their environment through unlockable areas, upgrades, and community structures.</p>
+        <div class="charity-water-layout">
+          <div class="charity-water-copy">
+            <p>Create an experience that makes charity:water's mission easily approachable and encourages engagement.</p>
+            <h4>Make every action count</h4>
+            <p>Give players a simple, repeatable interaction that generates resources in a menaingful way</p>
+            <h4>Make progress visible</h4>
+            <p>Use visual changes to communicate success. Every restoration milestone should make the world look and feel more alive.</p>
+            <h4>Encourage long term investment</h4>
+            <p>Give players reasons to keep developing their environment through unlockable areas, upgrades, and community structures.</p>
+          </div>
+          <figure class="project-figure charity-sketch-figure">
+            <img src="img/CharityWater/charitywatersketch.jpg" alt="Hand-drawn sketch of the game's lake restoration screen">
+            <figcaption>Early sketch of the restoration screen.</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="project-detail-card">
         <h3>Gameplay Loop</h3>
@@ -103,10 +120,18 @@
       </div>
       <div class="project-detail-card">
         <h3>Initial Development</h3>
-          <h4>Wireframing</h4>
-          <p>Taking my concepts and putting them into a more structured format using Figma. Early mockups explored the placement of counters, the central interaction, and the shop.</p>
-          <h4>Building Core Mechanics</h4>
-          <p>Used HTML, CSS, and JavaScript to begin implementing interactions, score tracking, game state, and progression. I kept the initial scope small enough to make a working prototype within a week.</p>
+        <div class="charity-water-layout">
+          <div class="charity-water-copy">
+            <h4>Wireframing</h4>
+            <p>Taking my concepts and putting them into a more structured format using Figma. Early mockups explored the placement of counters, the central interaction, and the shop.</p>
+            <h4>Building Core Mechanics</h4>
+            <p>Used HTML, CSS, and JavaScript to begin implementing interactions, score tracking, game state, and progression. I kept the initial scope small enough to make a working prototype within a week.</p>
+          </div>
+          <figure class="project-figure charity-wireframe-figure">
+            <img src="img/CharityWater/charitywaterwireframe.png" alt="Figma wireframes for the game's main and settings screens">
+            <figcaption>Early wireframes for the game interface.</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="project-detail-card">
         <h3>Iterating on Progression</h3>
