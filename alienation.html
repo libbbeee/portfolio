@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="projects.css">
 </head>
-<body>
+<body class="alienation-page">
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="container">
@@ -33,13 +33,18 @@
   <!-- Project Details -->
   <main class="project-detail-section">
     <div class="container">
-      <div class="project-detail-card">
-        <h3>Project Overview</h3>
-        <p><strong>Project:</strong> alieNation, a 3D puzzle game</p>
-        <p><strong>My Roles:</strong> Game Designer, Game Developer, Programmer</p>
-        <p><strong>Timeline:</strong> Ongoing team project</p>
-        <p>The player wakes up on an alien planet with a job in the supermarket. In order to properly interact with customers, the player must decipher and interpret the alien's language. The language itself is English, but tone is indicated by color. 
-        This unique language mechanic helps reflect the feelings many people with autism experience when having conversations; being able to understand the literal meaning of words but having to decipher the tone and its subtext. Our team is working to bring more awareness towards a common autistic experience through our fun and engaging mechanics.</p>
+      <div class="project-detail-card alienation-overview">
+        <div class="alienation-copy">
+          <h3>Project Overview</h3>
+          <p><strong>Project:</strong> alieNation, a 3D puzzle game</p>
+          <p><strong>My Roles:</strong> Game Designer, Game Developer, Programmer</p>
+          <p><strong>Timeline:</strong> Ongoing team project</p>
+          <p>The player wakes up on an alien planet with a job in the supermarket. In order to properly interact with customers, the player must decipher and interpret the alien's language. The language itself is English, but tone is indicated by color.
+          This unique language mechanic helps reflect the feelings many people with autism experience when having conversations; being able to understand the literal meaning of words but having to decipher the tone and its subtext. Our team is working to bring more awareness towards a common autistic experience through our fun and engaging mechanics.</p>
+        </div>
+        <figure class="project-figure alienation-title-figure">
+          <img src="img/alieNation/alieNationTitle.png" alt="alieNation game logo">
+        </figure>
       </div>
       <ul class="project-tags" aria-label="Project topics">
         <li>Mechanics</li>
@@ -51,11 +56,33 @@
       <h2>My Contributions</h2>
       <div class="project-detail-card">
         <h3>Design</h3>
-        <p>The gameplay loop is similar to a visual novel, except the player will assign colors to words in their responses to give a word added meaning. Groceries will also accumulate on the conveyor belt as the player is interacting with the customer, and the interaction will not end until all groceries are clicked. I assisted with designing the loops and mechanics.</p>
+        <div class="alienation-media-layout">
+          <div class="alienation-copy">
+            <p>The gameplay loop is similar to a visual novel, except the player will assign colors to words in their responses to give a word added meaning. Groceries will also accumulate on the conveyor belt as the player is interacting with the customer, and the interaction will not end until all groceries are clicked. I assisted with designing the loops and mechanics.</p>
+          </div>
+          <figure class="project-figure alienation-video-figure">
+            <video controls playsinline preload="metadata">
+              <source src="img/alieNation/AlieNationColorAssociation.mp4" type="video/mp4">
+              Your browser does not support the video element.
+            </video>
+            <figcaption>Color association gameplay concept.</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="project-detail-card">
         <h3>Development</h3>
-        <p>The game is being made in Unity, so I am currently programming in C# to implement what we worked on as a design team. My priority is making the grocery belt mechanic and player interactivity with their surroundings. I am also helping implement the dialogue and color changing mechanics.</p>
+        <div class="alienation-media-layout">
+          <div class="alienation-copy">
+            <p>The game is being made in Unity, so I am currently programming in C# to implement what we worked on as a design team. My priority is making the grocery belt mechanic and player interactivity with their surroundings. I am also helping implement the dialogue and color changing mechanics.</p>
+          </div>
+          <figure class="project-figure alienation-video-figure">
+            <video controls playsinline preload="metadata">
+              <source src="img/alieNation/GroceryBeltClip.mp4" type="video/mp4">
+              Your browser does not support the video element.
+            </video>
+            <figcaption>Grocery belt interaction in development.</figcaption>
+          </figure>
+        </div>
       </div>
       <a href="index.html#projects" class="back-to-projects"><i class="fa-solid fa-arrow-left"></i> View all projects</a>
     </div>
