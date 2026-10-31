@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="projects.css">
 </head>
-<body>
+<body class="shepherd-page">
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="container">
@@ -30,36 +30,156 @@
     </div>
   </section>
 
-  <!-- Project Details -->
+    <!-- Project Details -->
   <main class="project-detail-section">
     <div class="container">
-      <div class="project-detail-card">
-        <h3>Project Overview</h3>
-        <p><strong>Project:</strong> Shepherd, a 2D puzzle/arcade game</p>
-        <p><strong>My Roles:</strong> Game Designer, Systems Designer, Game Developer</p>
-        <p><strong>Timeline:</strong> 8 weeks (2025)</p>
-        <p>Shepherd is a game where the player plays as a sheep herding dog and rounds up all the sheep in a field into a barn within a time limit.</p>
-      </div>
+      <section class="project-detail-card monarch-overview shepherd-overview" aria-labelledby="monarch-overview-title">
+        <div class="monarch-overview-copy">
+          <h3 id="monarch-overview-title">Project Overview</h3>
+          <p>Shepherd is a 2D arcade-style herding game where players take control of a sheepdog and guide a flock of sheep into their pen before time runs out. Players must strategically navigate each level, using their movement and sprinting abilities to direct sheep around obstacles and overcome increasingly difficult challenges.
+          Inspired by classic arcade games, Shepherd focuses on a simple, easy-to-understand core mechanic that becomes progressively more challenging through level design, time constraints, and environmental obstacles.</p>
+          <ul class="monarch-facts" aria-label="Project details">
+            <li><strong>My roles:</strong> Game Designer, Systems Designer, Game Developer, Artist</li>
+            <li><strong>Tools:</strong> Unity</li>
+            <li><strong>Timeline:</strong> 8 weeks</li>
+          </ul>
+        </div>
+        <figure class="project-figure shepherd-overview-figure">
+          <img src="img/Shepherd/ShepherdLevelComplete.png" alt="Shepherd gameplay showing the level-complete screen">
+        </figure>
+      </section>
       <ul class="project-tags" aria-label="Project topics">
         <li>Mechanics</li>
-        <li>C#</li>
-        <li>Unity</li>
-        <li>Systems</li>
+        <li>Game Design</li>
+        <li>Systems Design</li>
       </ul>
 
-      <h2>My Contributions</h2>
+      <h2>Core Gameplay and Design</h2>
       <div class="project-detail-card">
-        <h3>Systems Design</h3>
-        <p>When Shepherd enters a certain radius of the sheep, they run in the opposite direction. I designed the game loop around herding the sheep within a time limit. This balances tension and critical thinking as players find the optimal route before nightfall.</p>
+        <h3>Herding Mechanics</h3>
+        <p>The central mechanic of Shepherd revolves around how sheep react to the player's proximity. When the player approaches a sheep, it runs in the opposite direction. Players must use this behavior to strategically guide the flock toward the pen.</p>
+        <p>Rather than directly controlling the sheep, players influence their movement through positioning. This creates a simple but engaging gameplay loop that encourages players to think about their approach and manage multiple moving characters simultaneously.</p>
+        <figure class="project-figure shepherd-figure shepherd-game-loop">
+          <img src="img/Shepherd/ShpherdGameLoop.png" alt="Flowchart showing Shepherd's core gameplay loop">
+        </figure>
+      </div>
+      <div class="project-detail-card">
+        <h3>Movement</h3>
+        <p>Players can move using WASD and hold SHIFT to sprint for a limited amount of time. Sprinting allows players to cover ground more quickly, but exhausting their stamina temporarily slows their movement.</p>
+        <p>This system introduces a resource-management element into the gameplay. Players must decide when sprinting is worth the cost, especially when working against the level's time limit.</p>
       </div>
       <div class="project-detail-card">
         <h3>Level Design</h3>
-        <p>Each level has a different number of sheep, a different time limit, and a different layout. My goal was to create initial levels that helped the player learn the mechanics, followed by increasingly difficult levels with new obstacles to keep the player engaged. I balanced the initial level difficulties with spreadsheets and designed new challenges to add to levels, like lakes and rivers.</p>
+        <p>The game starts with relatively simple levels that introduce players to the core mechanics. As players progress, additional challenges are introduced to increase difficulty and encourage different approaches to herding.</p>
+        <p>Challenges included:
+            <li>Time Constraints</li>
+            <li>Environmental Obstacles</li>
+            <li>Layout Changes</li>
+        </p>
+        <p>My goal was to keep the core mechanics consistent while changing the environment and level layouts to create new challenges.</p>
+        <figure class="project-figure shepherd-figure shepherd-level-sheet">
+          <img src="img/Shepherd/ShepherdSheet.png" alt="Level sheet showing Shepherd's planned level layouts">
+        </figure>
       </div>
-      <div class="project-detail-card">
-        <h3>Development</h3>
-        <p>After completing the design of Shepherd, I developed the initial levels of the game in Unity. This included coding in C#, UI, tilesets, and more. The development process was iterative, with consistent playtesting to get user feedback on the project.</p>
+
+      <h2>Development Process</h2>
+      <div class="project-detail-card alpha-section">
+        <p class="alpha-summary">Shepherd was developed in Unity's 2D engine. One of the most important parts of developing Shepherd was using playtesting to identify areas where the game could be improved. I conducted four playtests, each focusing on a different stage of development.</p>
+        <div class="alpha-playtest">
+          <h4 class="alpha-playtest-title"><i class="fa-solid fa-comments" aria-hidden="true"></i> Playtest 1</h4>
+          <p>The first prototype focused on getting the basic herding mechanics working.</p>
+          <div class="alpha-feedback">
+            <div class="alpha-feedback-card alpha-positive">
+              <h5><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> What players liked</h5>
+              <p>Enjoyed the concept and core mechaincs</p>
+            </div>
+            <div class="alpha-feedback-card alpha-critique">
+              <h5><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What could improve</h5>
+              <p>Found it difficult to judge movement on the field</p>
+            </div>
+          </div>
+          <div class="alpha-response">
+            <h5><i class="fa-solid fa-wrench" aria-hidden="true"></i> Design Response</h5>
+            <ul>
+              <li>Added texture to the grass to make different areas more distinct and movement easily recognizable.</li>
+            </ul>
+          </div>
+          <figure class="project-figure shepherd-figure shepherd-playtest-figure">
+            <img src="img/Shepherd/ShepherdPlaytest1.png" alt="Shepherd prototype from playtest 1">
+          </figure>
+        </div>
+        <div class="alpha-playtest">
+          <h4 class="alpha-playtest-title"><i class="fa-solid fa-comments" aria-hidden="true"></i> Playtest 2</h4>
+          <p>I introduced a tile map to give players a more complete idea of what the game would look and feel like.</p>
+          <div class="alpha-feedback">
+            <div class="alpha-feedback-card alpha-positive">
+              <h5><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> What players liked</h5>
+              <p>Liked the aesthetic</p>
+            </div>
+            <div class="alpha-feedback-card alpha-critique">
+              <h5><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What could improve</h5>
+              <p>Players wanted more UI feedback and could easily leave the playable area.</p>
+            </div>
+          </div>
+          <div class="alpha-response">
+            <h5><i class="fa-solid fa-wrench" aria-hidden="true"></i> Design Response</h5>
+            <ul>
+              <li>Implemented level boundaries</li>
+              <li>Began refining the UI</li>
+            </ul>
+          </div>
+          <figure class="project-figure shepherd-figure shepherd-playtest-figure">
+            <img src="img/Shepherd/ShepherdPlaytest2.png" alt="Shepherd prototype from playtest 2">
+          </figure>
+        </div>
+        <div class="alpha-playtest">
+          <h4 class="alpha-playtest-title"><i class="fa-solid fa-comments" aria-hidden="true"></i> Playtest 3</h4>
+          <p>Added a sheep counter, level timer, stamina bar, and level boundaries to improve player feedback.</p>
+          <div class="alpha-feedback">
+            <div class="alpha-feedback-card alpha-positive">
+              <h5><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> What players liked</h5>
+              <p>Appreciated the UI feedback and had a fun time learning the mechanics</p>
+            </div>
+            <div class="alpha-feedback-card alpha-critique">
+              <h5><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What could improve</h5>
+              <p>Wanted more of a challenge once they got the basic mechanics down</p>
+            </div>
+          </div>
+          <div class="alpha-response">
+            <h5><i class="fa-solid fa-wrench" aria-hidden="true"></i> Design Response</h5>
+            <ul>
+              <li>Expand level design to incorporate more challenges</li>
+            </ul>
+          </div>
+          <figure class="project-figure shepherd-figure shepherd-playtest-figure">
+            <img src="img/Shepherd/ShepherdPlaytest3.png" alt="Shepherd prototype from playtest 3">
+          </figure>
+        </div>
+        <div class="alpha-playtest">
+          <h4 class="alpha-playtest-title"><i class="fa-solid fa-comments" aria-hidden="true"></i> Playtest 4</h4>
+          <p>Expanded harder levels to have larger fields, obstacles like ponds, and stricter time limits.</p>
+          <div class="alpha-feedback">
+            <div class="alpha-feedback-card alpha-positive">
+              <h5><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> What players liked</h5>
+              <p>Enjoyed the variety between levels</p>
+            </div>
+            <div class="alpha-feedback-card alpha-critique">
+              <h5><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What could improve</h5>
+              <p>Would like the game to feel more 'alive'/visually responsive.</p>
+            </div>
+          </div>
+          <div class="alpha-response">
+            <h5><i class="fa-solid fa-wrench" aria-hidden="true"></i> Planned Design Response</h5>
+            <ul>
+              <li>Animate player and sheep movement</li>
+            </ul>
+          </div>
+          <figure class="project-figure shepherd-figure shepherd-playtest-figure">
+            <img src="img/Shepherd/ShepherdPlaytest4.png" alt="Shepherd prototype from playtest 4">
+          </figure>
+        </div>
       </div>
+
       <a href="index.html#projects" class="back-to-projects"><i class="fa-solid fa-arrow-left"></i> View all projects</a>
     </div>
   </main>
